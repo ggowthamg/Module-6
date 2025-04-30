@@ -26,14 +26,29 @@ To write a Python program to create a class `Student` with the private members `
 ### PROGRAM
 
 ```
-
-
+class Player:
+    def __init__(self, name: str, player_number: int):
+        self.__name = name
+        self.__player_number = player_number
+        
+    def get(self):
+        print(self.__name)
+        print(self.__player_number)
+        
+    def set(self,b,c):
+        print(b)
+        print(c)
+        
+a = Player('Betty Ballmer',10)
+a.get()
+a.set('Buster Ballmer',11)
 
 ```
 
 ### OUTPUT
-
+![image](https://github.com/user-attachments/assets/f4b7774d-6fae-4262-981a-a10d214b7569)
 
 ### RESULT
+Thus the program Encapsulation have been executed and verified sucessfully.
 
 
