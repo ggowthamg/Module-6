@@ -32,11 +32,26 @@ To write a Python program to perform division of two complex numbers using the b
 ### PROGRAM
 
 ```
+class complex:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    
+    def __add__(self,o):
+        return self.a * o.a , self.b * o.b
+        
+    def __str__(self):
+        return f"{self.a} + {self.b}i"
 
+obj1=complex(1, 2)
+obj2=complex(2, 3)
+obj3= obj1 + obj2
+
+print(obj3)
 ```
 
 ### OUTPUT
-
+![image](https://github.com/user-attachments/assets/18b02dc4-3ea4-4561-b4e9-d0bcd734763a)
 
 ### RESULT
-
+Thus the program have been executed and verified sucessfully.
