@@ -1,43 +1,51 @@
 # Exp.No:26  
-## Method Overriding
+## Method overloading
 
 ---
 
 ### AIM  
-To write a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()`. Create an object for each class and call the methods of the class which will print the name of the bird that is flying.
+To define a Python class accessories that demonstrates operator overloading using the __add__() method to perform addition for both integers and string values using object instances.
 
 ---
 
 ### ALGORITHM
 
-1. **Begin the program.**
-2. **Define the Bird class**:
-   - Create a method `intro()` to print "There are many types of birds."
-   - Create a method `flight()` to print "Most of the birds can fly but some cannot."
-3. **Define the Sparrow class**, which inherits from `Bird`:
-   - Override the `flight()` method.
-   - Call the `intro()` method from the parent class.
-   - Print "Sparrows can fly."
-4. **Define the Ostrich class**, which inherits from `Bird`:
-   - Override the `flight()` method.
-   - Call the `intro()` method from the parent class.
-   - Print "Ostriches cannot fly."
-5. **Create an object `obj_bird`** of the `Bird` class.
-6. **Create an object `obj_spr`** of the `Sparrow` class.
-7. **Create an object `obj_ost`** of the `Ostrich` class.
-8. **Print the general message** "There are many types of birds."
-9. **Call the `flight()` method** on each object (`obj_bird`, `obj_spr`, `obj_ost`) to display the respective messages.
-10. **Terminate the program.**
+Define a class accessories with:
+
+An __init__ method to initialize object data (X).
+
+An __add__ method to overload the + operator so that two objects of this class can be added (using their X attributes).
+
+Take two integer inputs from the user and create object_1 and object_2 using the accessories class.
+
+Add the two objects using the overloaded + operator and display the result with the message "Rate is :".
+
+Take two string inputs from the user and create object_3 and object_4 using the accessories class.
+
+Add these two objects using the overloaded + operator and display the result with the message "accessories are:".
 
 ---
 
 ### PROGRAM
 
 ```
-
+class accessories:  
+    def __init__(self, X):  
+        self.X = X  
+   
+    # adding two objects  
+    def __add__(self, U):  
+        return self.X + U.X  
+object_1 = accessories( int( input()))  
+object_2 = accessories( int( input()))  
+print ("Rate is :", object_1 + object_2)  
+object_3 = accessories(str( input()))  
+object_4 = accessories(str( input()))  
+print ("accessories are: ", object_3 + object_4)
 ```
 
 ### OUTPUT
-
+![image](https://github.com/user-attachments/assets/3f29f40e-2655-4903-afbc-14181467a2e9)
 
 ### RESULT
+Thus the program Overloading have been executed and verified sucessfully.
