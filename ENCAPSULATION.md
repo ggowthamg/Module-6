@@ -5,7 +5,6 @@
 
 ### AIM  
 To write a Python program to create a class `Student` with the private members `name` and `age`, and add getter and setter methods to initialize and modify the `age` variable.
-
 ---
 
 ### ALGORITHM
